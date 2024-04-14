@@ -193,7 +193,7 @@ const showNote = (note)=>{
 
 const deleteNote = (id) => {
     let noteDel = loadNotes(); 
-    noteDel = noteDel.filter(note => note.id !== id);
+    noteDel = noteDel.filter(note => note.id !== id); //se o id for diferente do id do modalView ele copia para noteDel se não, não copia
     localStorage.setItem('notes', JSON.stringify(noteDel));
     
     listNotes();
