@@ -176,7 +176,7 @@ const showNote = (note)=>{
         evt.preventDefault();
         deleteNote(note.id);
         // mesma coisa que: aDelete.addEventListener('click', (evt) => deleteNote(note,id));
-    
+        
     
     })
     aEdit.addEventListener('click', () => {
@@ -192,10 +192,17 @@ const showNote = (note)=>{
 }
 
 const deleteNote = (id) => {
-    let notes = loadNotes(); 
-    notes = notes.filter(note => note.id !== id);
-    localStorage.setItem('notes', JSON.stringify(notes));
+    let noteDel = loadNotes(); 
+    noteDel = noteDel.filter(note => note.id !== id);
+    localStorage.setItem('notes', JSON.stringify(noteDel));
+    
     listNotes();
+
+    modalView.style.display='none';
+    addNote.style.display = 'block';
+    notes.style.display = 'flex';
+    
+    
 };
 
 

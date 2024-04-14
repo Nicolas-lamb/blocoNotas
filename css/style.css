@@ -4,7 +4,7 @@
   }
   
   header{
-    border-bottom: 1px solid #1b85dc;
+    border-bottom: 1px solid #616c75;
     height: 10vh;
     display:flex;
     margin-top: 10px;
@@ -15,6 +15,10 @@
     height: 10vh;
     margin-left: 10px;
   
+  }
+
+  .bi-x-square{
+    color: rgb(189, 38, 38);
   }
   
   #logo img{
@@ -71,7 +75,7 @@
   }
   
   #modal-view{
-    border:1px solid #1b85dc;
+    border:1px solid #616c75;
     position: absolute;
     display:none;
     width: 90vw;
@@ -84,7 +88,7 @@
   }
   
   #modal{
-    border:1px solid #1b85dc;
+    border:1px solid #616c75;
     position: absolute;
     padding:2vh 2vw;
     display: none;
