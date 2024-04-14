@@ -13,6 +13,7 @@
   #logo{
     width: 30vw;
     height: 10vh;
+    margin-left: 10px;
   
   }
   
@@ -31,6 +32,27 @@
     margin: 2vh 2vw;
     min-height: 80vh;
   }
+  .bi-trash{
+    color: rgb(189, 38, 38);
+   
+  }
+  .bi-trash:hover{
+    cursor: pointer;
+    color: rgba(189, 38, 38, 0.729);
+  }
+  .bi-trash:active{
+    color: rgb(189, 38, 38);
+  }
+  .bi-pen{
+    color: rgb(43, 38, 189);
+  }
+  .bi-pen:hover{
+    cursor: pointer;
+    color: rgba(43, 38, 189, 0.729);
+  }
+  .bi-pen:active{
+    color:rgb(43, 38, 189);
+  }
   
   #notes{
     display: flex;
@@ -40,6 +62,12 @@
   
   .card a{
     text-decoration: none;
+  }
+  .card{
+    margin-bottom: 40px;
+    border: outset 5px rgb(96, 118, 138);
+    border-radius: 20px;
+    background-color: rgb(234, 234, 234);
   }
   
   #modal-view{
@@ -67,4 +95,10 @@
     display:flex;
     gap:10px;
   }
-  
+  @media (max-width:600px){
+      .card{
+        margin-bottom: 20px;
+      }
+        
+
+  }
